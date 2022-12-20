@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>cemeteries.ml</title>
-  <link rel="shortcut icon" type="image/jpg" href="faviconold.ico.png"/>
-
+  <link rel="shortcut icon" type="image/jpg" href="faviconold.ico.png" />
   <link rel="stylesheet" href="./style.css">
-
 </head>
+
 <body>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-
-<title>cemeteries.ml</title>
-<div id="container">
-  <div id="content">
-    <p>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <title>cemeteries.ml</title>
+  <div id="container">
+    <div id="content">
+      <p>
         <b>Sorry! Not much to see here yet. Check back in a few days!</b><br>
- 
- 
-
-    </p>
-  </div>
-
-</div>
-
+      </p>
+    </div>
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      }, false);
+    </script>
+    <!-- ******************************* -->
+    <script>
+      document.addEventListener("keydown", (e) => {
+        // THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+        // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+        // THIS WILL ONLY DISABLE CONTROL AND F12
+        if (e.ctrlKey || e.keyCode == 123) {
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      });
+    </script>
 </body>
+
 </html>
